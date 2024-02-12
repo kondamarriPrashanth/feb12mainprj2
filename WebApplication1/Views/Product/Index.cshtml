@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Product Home</h2>
+<h1>First way</h1>
+@Html.Partial("ProductView");
+<h1>second way</h1>
+@{ Html.RenderPartial("ProductView");}
+<h1>third way</h1>
+@Html.Action("PAction");
+<h1>fourth way</h1>
+@{ Html.RenderAction("PAction");}
